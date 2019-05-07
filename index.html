@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>罗宗民的个人简历</title>
   <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="./loading.css">
   <script src="//at.alicdn.com/t/font_1081215_8t7tofvy2w.js"></script>
   <style type="text/css">
     .icon {
@@ -30,6 +29,43 @@
     .site-welcome.active {
       display: flex;
     }
+    .loading {
+    width: 200px;
+    height: 200px;
+    
+    position: relative;
+  }
+  
+  .loading::before, .loading::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: black;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: s 1.5s linear infinite;
+  }
+  .loading::after {
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes s{
+    0%{
+      width: 0px;
+      height: 0px;
+      opacity: 1;
+    }
+    100%{
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
   </style>
 </head>
 <body>
@@ -209,7 +245,10 @@
     </div>
   </section>
   <script>
-    siteWelcome.classList.remove('active')
+    setTimeout(function(){
+      siteWelcome.classList.remove('active')
+    },3000)
+    
   </script>
 </body>
 </html>
