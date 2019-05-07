@@ -33,6 +33,15 @@ h1,h2,h3,h4,h5,h6 {
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.5s;
+  color: #b7b7b7
+}
+.topNavBar.sticky {
+  background: white;
+  padding: 10px 0;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #3d4451;
 }
 
 .topNavBar-inner {
@@ -40,8 +49,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .topNavBar nav {
-  padding-top: 6px;
-  padding-bottom: 1px;
+  padding-top: 5px;
+  
 }
 .topNavBar nav > ul {
   list-style: none;
@@ -57,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .topNavBar nav > ul > li >a {
   font-size: 12px;
-  color: #B7B7B7;
+  color: inherit;
   font-weight: bold;
   border-top: 4px solid transparent;
   border-bottom: 3px solid transparent;
