@@ -77,12 +77,28 @@
       <a class="logo" href="#" alt="logo" style="float: left">
         <span class="rs">RS</span><span class="card">card</span>
       </a>
-      <nav style="float: right;">
+      <nav class= "menu" style="float: right;">
         <ul class="clearfix">
-          <li><a href="">关于</a></li>
-          <li><a href="">技能</a></li>
-          <li><a href="">作品</a></li>
-          <li><a href="">博客</a></li>
+          <li><a href="#siteAbout">关于</a></li>
+          <li><a href="#siteSkills">技能</a></li>
+          <li>
+            <a href="#siteWorks">作品</a>
+            <ul class="submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
+            </ul>
+          </li>
+          <li>
+            <a href="">博客</a>
+            <span></span>
+            <span></span>
+            <ul class="submenu">
+                <li>博客1</li>
+                <li>博客2</li>
+                <li>博客3</li>
+            </ul>
+          </li>
           <li><a href="">日历</a></li>
           <li><a href="">联系方式</a></li>
           <li><a href="">其他</a></li>
@@ -95,7 +111,7 @@
     <div class="mask"></div>
   </div>
   <main>
-    <div class="userCard">
+    <div id="siteAbout" class="userCard">
       <div class="pictureAndText clearfix">
         <div class="picture">
           <img src="./img/me.jpg" alt="头像">
@@ -156,7 +172,7 @@
       技能：前端开发，Node.js开发。
     </p>
   </main>
-  <section class="skills">
+  <section id="siteSkills" class="skills">
     <h2>技能</h2>
     <ol class="clearfix"> 
       <li>
@@ -209,7 +225,7 @@
       </li>
     </ol>
   </section>
-  <section class="portfolio">
+  <section id="siteWorks" class="portfolio">
     <h2>作品集</h2>
     <nav>
       <ol class="clearfix">
@@ -247,13 +263,34 @@
   <script>
     setTimeout(function(){
       siteWelcome.classList.remove('active')
-    },3000)
+    },1000)
 
     window.onscroll = function(xxxxx){
       if(window.scrollY > 0){
         topNavBar.classList.add('sticky')
       }else{
         topNavBar.classList.remove('sticky')
+      }
+    }
+    let liTags = document.querySelectorAll('nav.menu > ul > li')
+    for(let i=0; i<liTags.length; i++){
+      liTags[i].onmouseenter = function(x){
+        x.currentTarget.classList.add('active')
+      }
+      liTags[i].onmouseleave = function(x){
+        x.currentTarget.classList.remove('active')
+      }
+    }
+
+    let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+    for(let i=0; i<aTags.length; i++){
+      aTags[i].onclick = function(x){
+        x.preventDefault()
+        let a = x.currentTarget //获取a标签
+        let href = a.getAttribute('href') //'siteSkills'
+        let element = document.querySelector(href) //得到元素
+        let top = element.offsetTop //得到element离顶部不变的距离
+        window.scrollTo(0, top - 80) //让window滑动到x不变,定位到y方向第二个值离底部距离
       }
     }
   </script>
