@@ -27,6 +27,9 @@ h1,h2,h3,h4,h5,h6 {
   clear: both;
 }
 
+[data-x].active {
+  outline: 5px solid red;
+}
 .topNavBar {
   padding: 20px 0px 20px 0px;
   position: fixed;
