@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>罗宗民的个人简历</title>
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <script src="//at.alicdn.com/t/font_1081215_8t7tofvy2w.js"></script>
   <style type="text/css">
     .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
     }
+
     .site-welcome {
       display: none;
       position: fixed;
@@ -26,56 +30,61 @@
       justify-content: center;
       align-items: center;
     }
+
     .site-welcome.active {
       display: flex;
     }
-    
+
     .loading {
-    width: 200px;
-    height: 200px;
-    
-    position: relative;
-  }
-  
-  .loading::before, .loading::after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    background: black;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    animation: s 1.5s linear infinite;
-  }
-  .loading::after {
-    animation-delay: 0.75s;
-  }
-  
-  @keyframes s{
-    0%{
+      width: 200px;
+      height: 200px;
+
+      position: relative;
+    }
+
+    .loading::before,
+    .loading::after {
+      content: '';
+      position: absolute;
       width: 0px;
       height: 0px;
-      opacity: 1;
+      background: black;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      animation: s 1.5s linear infinite;
     }
-    100%{
-      width: 100px;
-      height: 100px;
-      opacity: 0;
+
+    .loading::after {
+      animation-delay: 0.75s;
     }
-  }
+
+    @keyframes s {
+      0% {
+        width: 0px;
+        height: 0px;
+        opacity: 1;
+      }
+
+      100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left">
         <span class="rs">RS</span><span class="card">card</span>
       </a>
-      <nav class= "menu" style="float: right;">
+      <nav class="menu" style="float: right;">
         <ul class="clearfix">
           <li><a href="#siteAbout">关于</a></li>
           <li><a href="#siteSkills">技能</a></li>
@@ -92,9 +101,9 @@
             <span></span>
             <span></span>
             <ul class="submenu">
-                <li>博客1</li>
-                <li>博客2</li>
-                <li>博客3</li>
+              <li>博客1</li>
+              <li>博客2</li>
+              <li>博客3</li>
             </ul>
           </li>
           <li><a href="">日历</a></li>
@@ -103,12 +112,14 @@
         </ul>
       </nav>
     </div>
-    
+
   </div>
   <div class="banner">
     <div class="mask"></div>
   </div>
   <main>
+
+
     <div data-x id="siteAbout" class="userCard">
       <div class="pictureAndText clearfix">
         <div class="picture">
@@ -116,14 +127,14 @@
         </div>
         <div class="text">
           <span class="welcome">Hello
-          <span class="triangle"></span>
+            <span class="triangle"></span>
           </span>
           <h1>罗宗民</h1>
           <p>初级前端开发工程师</p>
           <hr>
-          <dl> 
-            <dt>年龄</dt> 
-            <dd>25</dd> 
+          <dl>
+            <dt>年龄</dt>
+            <dd>25</dd>
             <dt>所在城市</dt>
             <dd>深圳</dd>
             <dt>邮箱</dt>
@@ -139,42 +150,42 @@
         <a href="https://github.com/miqilin21">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-github"></use>
-          </svg>            
+          </svg>
         </a>
         <a href="https://www.zhihu.com/people/mi-qi-lin-60-52">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-zhihu"></use>
-          </svg>  
+          </svg>
         </a>
         <a href="https://weibo.com/u/2708035565">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-weibo"></use>
-          </svg>   
+          </svg>
         </a>
         <a href="https://i.loli.net/2019/03/21/5c935fa3cfa54.jpg">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-weixin"></use>
-          </svg>  
+          </svg>
         </a>
         <a href="#">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-twitter"></use>
-          </svg>  
+          </svg>
         </a>
       </footer>
     </div>
     <p class="downloadResume-wrapper">
       <a class="downloadResume" href="./cv.pdf" target="_blank" download>下载PDF简历</a>
     </p>
-    
+
     <p class="selfIntroduction">
-      罗宗民，前端开发工程师。<br> 
+      罗宗民，前端开发工程师。<br>
       技能：前端开发，Vue.js开发。
     </p>
   </main>
   <section data-x id="siteSkills" class="skills">
     <h2>技能</h2>
-    <ol class="clearfix"> 
+    <ol class="clearfix">
       <li>
         <h3>
           HTML 5 & CSS 3
@@ -220,92 +231,98 @@
           Node.js
         </h3>
         <div class="progressBar">
-            <div class="progress" style="width: 30%"></div>
+          <div class="progress" style="width: 30%"></div>
         </div>
       </li>
     </ol>
   </section>
   <section data-x id="siteWorks" class="portfolio">
     <h2>作品集</h2>
-    <nav>
-      <ol class="clearfix">
-        <li id="portfolio1">所有</li>
-        <li id="portfolio2">框架</li>
-        <li id="portfolio3">原生JS&CSS</li>
-      </ol>
-      <div id="portfolioBar" class="bar state-1">
-        <div class="bar-inner"></div>
+
+    <!-- 变成轮播 -->
+  
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <img src="./img/works/nav-page.jpg" class="swiper-slide">
+        <img src="./img/works/canvas.jpg" class="swiper-slide">
+        <img src="./img/works/blog.jpg" class="swiper-slide">
       </div>
-    </nav>
-    <script> 
-      portfolio1.onclick = function(){
-        portfolioBar.className = "bar state-1"
-      }
-      portfolio2.onclick = function(){
-        portfolioBar.className = "bar state-2"
-      }
-      portfolio3.onclick = function(){
-        portfolioBar.className = "bar state-3"
-      }
-    </script>
-    <div class="works" style="height: 597px">
-      <div class="big" style="top: 0;left: 0;">
-        <img src="./img/1.jpg" alt="作品1">
-      </div>
-      <div class="small" style="top: 0;left: 645px;">
-        <img src="./img/2.jpg" alt="作品2">
-      </div>
-      <div class="small" style="top: 298px;left: 645px;">
-        <img src="./img/3.jpg" alt="作品3">
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
     </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })
+  </script>
   <script>
     // 添加 offset 类
     let specialTags = document.querySelectorAll('[data-x]')
-    for(let i=0; i<specialTags.length; i++){
+    for (let i = 0; i < specialTags.length; i++) {
       specialTags[i].classList.add('offset')
     }
 
-    setTimeout(function(){
+    setTimeout(function () {
       findClosest()
-    },100)
-    window.onscroll = function(x){
-      if(window.scrollY > 0){
+    }, 100)
+    window.onscroll = function (x) {
+      if (window.scrollY > 0) {
         topNavBar.classList.add('sticky')
-      }else{
+      } else {
         topNavBar.classList.remove('sticky')
       }
       findClosest()
     }
 
-    function findClosest(){
+    function findClosest() {
       let specialTags = document.querySelectorAll('[data-x]')
       let minIndex = 0
-      for(let i=1; i<specialTags.length; i++){
-        if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
+      for (let i = 1; i < specialTags.length; i++) {
+        if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {
           minIndex = i
         }
       }
       // minIndex就是离窗口顶部最近的元素
       specialTags[minIndex].classList.remove('offset')
       let id = specialTags[minIndex].id
-      let a = document.querySelector('a[href="#'+ id +'"]')
+      let a = document.querySelector('a[href="#' + id + '"]')
       let li = a.parentNode
       let brothersAndMe = li.parentNode.children
-      for(let i=0; i<brothersAndMe.length; i++){
+      for (let i = 0; i < brothersAndMe.length; i++) {
         brothersAndMe[i].classList.remove('highlight')
       }
       li.classList.add('highlight')
     }
 
     let liTags = document.querySelectorAll('nav.menu > ul > li')
-    for(let i=0; i<liTags.length; i++){
-      liTags[i].onmouseenter = function(x){
+    for (let i = 0; i < liTags.length; i++) {
+      liTags[i].onmouseenter = function (x) {
         x.currentTarget.classList.add('active')
       }
-      liTags[i].onmouseleave = function(x){
+      liTags[i].onmouseleave = function (x) {
         x.currentTarget.classList.remove('active')
       }
     }
@@ -318,30 +335,30 @@
     }
     requestAnimationFrame(animate);
 
-    for(let i=0; i<aTags.length; i++){
-      aTags[i].onclick = function(x){
+    for (let i = 0; i < aTags.length; i++) {
+      aTags[i].onclick = function (x) {
         x.preventDefault()
         //let a = x.currentTarget //获取a标签
         //let href = a.getAttribute('href') //'siteSkills'
         //let element = document.querySelector(href) //得到元素
         //let top = element.offsetTop //得到element离顶部不变的距离
         let top = document.querySelector(x.currentTarget.getAttribute('href')).offsetTop
-        
+
         let currentTop = window.scrollY
         let targetTop = top - 80
         let s = targetTop - currentTop
         var coords = { y: currentTop } // Start at (y:currentTop)
-        var t = Math.abs((s/100)*300)
-        if(t>500) {
+        var t = Math.abs((s / 100) * 300)
+        if (t > 500) {
           t = 500
         }
         var tween = new TWEEN.Tween(coords) // Create a new tween that modifies 'coords'.
-        .to({ y: targetTop }, t) // Move to (y: targetTop) in 1 second.
-        .easing(TWEEN.Easing.Quadratic.InOut) // Use an easing function to make the animation smooth.
-        .onUpdate(function() { // Called after tween.js updates 'coords'.
-          window.scrollTo(0, coords.y)
-        })
-        .start(); // Start the tween immediately.
+          .to({ y: targetTop }, t) // Move to (y: targetTop) in 1 second.
+          .easing(TWEEN.Easing.Quadratic.InOut) // Use an easing function to make the animation smooth.
+          .onUpdate(function () { // Called after tween.js updates 'coords'.
+            window.scrollTo(0, coords.y)
+          })
+          .start(); // Start the tween immediately.
       }
     }
   </script>

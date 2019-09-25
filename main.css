@@ -345,57 +345,26 @@ section.skills.offset .progress {
 section.portfolio {
   text-align: center;
   margin-bottom: 100px;
+  max-width: 760px;
 }
-section.portfolio > nav {
-  text-align: center;
+section.portfolio h2{
+  margin-bottom: 32px;
 }
-section.portfolio > nav > ol {
-  margin: 0 auto;
-  display: inline-block;
-  vertical-align: top;
+
+section.portfolio .swiper-container {
+  width: 640px;
+  height: 480px;
 }
-section.portfolio > nav > ol > li {
-  float: left;
-  margin-left: 40px;
-  cursor: pointer;
+section.portfolio .swiper-button-prev, 
+section.portfolio .swiper-button-next {
+  background-color: white;
+  width: 64px;
+  height: 64px;
+  right: 100%;
+  left: auto;
+  border-radius: 50%;
 }
-section.portfolio > nav > ol > li:nth-child(1) {
-  margin-left: 0;
-}
-section.portfolio > nav {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 32px;
-}
-section.portfolio > nav .bar {
-  height: 5px;
-  background: white;
-  margin-top: 5px;
-  border-radius: 2px;
-  margin-bottom: 28px;
-}
-section.portfolio > nav .bar-inner {
-  height: 100%;
-  background: #e6686a;
-  border-radius: 2px;
-  transition: all 0.3s;
-}
-section.portfolio > nav .bar.state-1 .bar-inner {
-  margin-left: 0;
-  width: 50px;
-}
-section.portfolio > nav .bar.state-2 .bar-inner {
-  margin-left: 65px;
-  width: 50px;
-}
-section.portfolio > nav .bar.state-3 .bar-inner {
-  margin-left: 140px;
-  width: 96px;
-}
-section.portfolio .works {
-  position: relative;
-}
-section.portfolio .works > .big,
-section.portfolio .works > .small {
-  position: absolute;
+section.portfolio .swiper-button-next {
+  left: 100%;
+  right: auto;
 }
