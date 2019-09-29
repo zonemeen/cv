@@ -171,24 +171,23 @@
     <h2>作品集</h2>
 
     <!-- 变成轮播 -->
-  
-    <!-- Slider main container -->
-    <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <img src="./img/works/nav-page.jpg" class="swiper-slide">
-        <img src="./img/works/canvas.jpg" class="swiper-slide">
-        <img src="./img/works/blog.jpg" class="swiper-slide">
+    <div id="mySlides">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="./img/works/nav-page.jpg" class="swiper-slide">
+          <img src="./img/works/canvas.jpg" class="swiper-slide">
+          <img src="./img/works/blog.jpg" class="swiper-slide">
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    
   </section>
   <section class="message">
     <h2>留言板</h2>
@@ -205,6 +204,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+  <script src="./js/base/View.js"></script>
+  <script src="./js/base/Model.js"></script>
+  <script src="./js/base/Controller.js"></script>
   <!-- 模块化 -->
   <script src="./js/init_swiper.js"></script>
   <script src="./js/auto-slide-up.js"></script>
