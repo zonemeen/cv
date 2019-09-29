@@ -190,9 +190,14 @@
     <div class="swiper-button-next"></div>
     
   </section>
-  <section>
-    <h2>留言</h2>
+  <section class="message">
+    <h2>留言板</h2>
+    <ol id="messageList">
+    </ol>
     <form id="postMessageForm">
+      <label for="">ID</label>
+      <input type="text" name="name">
+      <label for="">评论内容</label>
       <input type="text" name="content">
       <input type="submit" value="提交">
     </form>

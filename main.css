@@ -303,6 +303,7 @@ section.portfolio {
   margin-top: 60px;
 }
 section.skills > h2,
+section.message > h2,
 section.portfolio > h2 {
   text-align: center;
   color: #3d4451;
@@ -373,4 +374,19 @@ section.portfolio .swiper-button-next {
 section.portfolio .swiper-button-next {
   left: 100%;
   right: auto;
+}
+
+section.message > ol {
+  max-width: 700px;
+  margin: 20px auto;
+  border-top: 1px solid #DDD;
+  background: #f4f4f4;
+}
+section.message > ol > li {
+  padding: 16px;
+  border-bottom: 1px solid #DDD;
+}
+section.message > form {
+  max-width: 700px; 
+  margin: 30px auto;
 }
