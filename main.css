@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6 {
   top: 100%;
   left: 0;
   width: 100%;
-  background: #e06567;
+  background: #01afa6;
   height: 3px;
   animation: menuSlide 0.4s;
 }
@@ -169,7 +169,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .topNavBar .logo .rs {
   margin-right: 8px;
-  color: #e8676b;
+  color: #01afa6;
 }
 
 .topNavBar .logo .card {
@@ -198,7 +198,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .userCard .welcome {
-  background: #E6686A;
+  background: #01afa6;
   color: white;
   display: inline-block;
   padding: 4px 16px;
@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6 {
   display: block;
   border: 10px solid transparent;
   width: 0px;
-  border-left-color: #E6686A;
+  border-left-color: #01afa6;
   border-top-width: 0px;
   position: absolute;
   left: 4px;
@@ -251,7 +251,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .userCard > footer.media {
-  background-color: #e6686a;
+  background-color: #01afa6;
   text-align: center;
 }
 .userCard > footer.media > a {
@@ -263,7 +263,7 @@ h1,h2,h3,h4,h5,h6 {
   margin: 16px;
 }
 .userCard > footer.media > a:hover {
-  background: #cf5d5f;
+  background: #01afa6;
 }
 .userCard svg {
   width: 30px;
@@ -355,7 +355,7 @@ section.skills .progressBar {
 }
 section.skills .progressBar > .progress {
   height: 100%;
-  background: #e6686a;
+  background: #01afa6;
   width: 70%;
   border-radius: 2px;
   transform: translateX(0);
@@ -443,7 +443,7 @@ section.myBlog a {
 
 .myBlog-list .firstBlog .blogTime {
   padding: 10px 20px;
-  background: #e8676b;
+  background: #01afa6;
   position: absolute;
   top: 20px;
   right: 20px; }
@@ -484,7 +484,7 @@ section.myBlog a {
   margin: 20px 0px 30px 0px; }
 
 .firstBlog > ul > li .blogTitle:hover {
-  color: #e8676b; }
+  color: #01afa6; }
 
 .firstBlog > ul > li .user-bg {
   color: #878787;
@@ -558,7 +558,7 @@ section.message > form {
   content: "“";
   display: block;
   font-size: 70px;
-  color: #e8676b;
+  color: #01afa6;
   padding-right: 40px;
   margin-top: -10px;
 }
@@ -637,7 +637,7 @@ section.message > form {
   height: 40px;
   border-radius: 20px;
   font-size: 16px;
-  background: #e8676b;
+  background: #01afa6;
   color: #fff;
   border: none;
 }
