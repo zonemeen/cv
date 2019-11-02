@@ -296,7 +296,8 @@ body > main .downloadResume:hover {
 }
 
 section.skills,
-section.portfolio {
+section.portfolio,
+section.message {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
@@ -311,7 +312,7 @@ section.portfolio > h2 {
   line-height: 1.2;
   font-weight: bold;
 }
-ection.skills h3 {
+section.skills h3 {
   font-size: 14px;
   line-height: 1.1;
   padding-right: 40px;
@@ -376,7 +377,7 @@ section.portfolio .swiper-button-next {
   right: auto;
 }
 
-section.message > ol {
+/* section.message > ol {
   max-width: 700px;
   margin: 20px auto;
   border-top: 1px solid #DDD;
@@ -389,4 +390,112 @@ section.message > ol > li {
 section.message > form {
   max-width: 700px; 
   margin: 30px auto;
+} */
+
+
+
+.message main {
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 6px rgb(170, 170, 170);
+  margin-top: 40px;
+  padding: 40px 10px;
+  
+}
+
+.message main li {
+  margin-top: 50px;
+  display: flex;
+}
+
+.message main li:before {
+  content: "“";
+  display: block;
+  font-size: 70px;
+  color: #e8676b;
+  padding-right: 40px;
+  margin-top: -10px;
+}
+
+.message main li:first-child {
+  margin-top: 0;
+}
+
+.message .userMessage {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3e4450;
+}
+
+.message .userMessage::after {
+  content: "";
+  display: block;
+  width: 760px;
+  height: 1px;
+  background: #eee;
+  margin-top: 20px;
+}
+
+.message .userName {
+  display: flex;
+  margin-top: 20px;
+}
+
+.message .userName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.message .userName>div {
+  padding-left: 20px;
+}
+
+.message .userName div:first-child {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #3e4450;
+}
+
+.message .userName div:last-child {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.message form {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.message input[type="text"]::placeholder {
+  color: #d0d0d0;
+}
+
+.message input[type="text"] {
+  flex: 6;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.message input[type="text"]:focus {
+  outline: none;
+}
+
+.message input[type="submit"] {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  background: #e8676b;
+  color: #fff;
+  border: none;
+}
+
+.message input[type="submit"]:focus {
+  outline: none;
 }
