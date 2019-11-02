@@ -378,6 +378,32 @@ section.portfolio .swiper-container {
   width: 640px;
   height: 480px;
 }
+
+.swiper-slide:hover {
+  box-shadow: -4px -1px 46px -15px rgba(0,0,0,0.75);
+  transition: all 0.8s;
+}
+
+.swiper-slide>a {
+  height: 210px;
+}
+
+.swiper-slide-1 {
+  width: 640px;
+  height: 30px;
+  background-color: #efefef;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+.swiper-slide a:hover .swiper-slide-1 {
+  display: block;
+  transition: all 2s;
+}
+
+
 section.portfolio .swiper-button-prev, 
 section.portfolio .swiper-button-next {
   background-color: white;
