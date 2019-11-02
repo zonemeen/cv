@@ -1,6 +1,5 @@
 body {
   background: #efefef;
-  padding-bottom: 200px;
 }
 
 a {
@@ -644,4 +643,17 @@ section.message > form {
 
 .message input[type="submit"]:focus {
   outline: none;
+}
+
+.foot {
+  height: 50px;
+  background-color: #ccc;
+  margin-top: 80px;
+}
+
+.foot .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
 }
