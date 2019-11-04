@@ -310,6 +310,7 @@ body > main .downloadResume:hover {
 section.skills,
 section.portfolio,
 section.myBlog,
+section.history,
 section.message {
   max-width: 940px;
   margin-left: auto;
@@ -319,6 +320,7 @@ section.message {
 section.skills > h2,
 section.message > h2,
 section.myBlog > h2,
+section.history > h2,
 section.portfolio > h2 {
   text-align: center;
   color: #3d4451;
@@ -656,4 +658,75 @@ section.message > form {
   align-items: center;
   justify-content: center;
   padding: 15px 0;
+}
+
+
+.timeline > li::before{
+  content: '';
+  display: block;
+  clear: both;
+ 
+}
+
+section .timeline > li:nth-child(odd){
+margin-top: 30px;
+padding-right: calc(50% - 50px);
+text-align: right;
+}
+section .timeline .img{
+font-size: 20px;
+width: 100px;
+display: inline-block;
+background-color: #f7ba3e;
+padding-right: 5px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #01afa6;
+}
+section .timeline img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #01afa6;
+}
+section .timeline > li:nth-child(odd) dl{
+margin-right: 120px;
+}
+section .timeline > li:nth-child(odd) img{
+float: right;
+}
+section .timeline > li:nth-child(even){
+margin-top: 30px;
+padding-left: calc(50% - 50px);
+text-align: left;
+}
+section .timeline > li:nth-child(even) dl{
+margin-left: 120px;
+}
+section .timeline > li:nth-child(even) img{
+float: left;
+}
+section .timeline dt{
+font-size: 24px;
+font-weight: bold;
+}
+section .timeline dd:nth-of-type(1){
+font-size: 18px;
+font-weight: bold;
+}
+section .timeline > li{
+position: relative;
+}
+.history li::before{
+content: '';
+display: inline-block;
+position: absolute;
+width: 4px;
+background-color: #01afa6;
+left: 50%;
+top: 105px;
+height: 115px;
+}
+section li:last-child::before{
+height: 0;
 }
