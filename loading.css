@@ -1,9 +1,8 @@
 .loading {
     width: 200px;
     height: 200px;
-    
-    position: relative;
-  }
+    position: relative;  
+    }
   
   .loading::before, .loading::after {
     content: '';

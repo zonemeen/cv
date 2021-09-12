@@ -1,4 +1,4 @@
-!function() {
+!function () {
     var view = View('#mySlides')
     var controller = {
         view: null,
@@ -15,12 +15,12 @@
                 prevEl: '.swiper-button-prev',
             },
         },
-        init: function(view){
+        init: function (view) {
             this.view = view
             this.initSwiper()
         },
-        initSwiper: function(){
-            this.swiper = new Swiper (
+        initSwiper: function () {
+            this.swiper = new Swiper(
                 this.view.querySelector('.swiper-container'),
                 this.swiperOptions
             )
